@@ -8,18 +8,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Estilizar párrafos pares
-    function estilizarImpares() {
+    function estilizarPares() {
         let parrafos = document.querySelectorAll('p:nth-child(even)');
         parrafos.forEach(parrafo => {
-            parrafo.classList.toggle('impar');
+            parrafo.classList.toggle('par');
         });
     }
 
     // Estilizar párrafos impares
-    function estilizarPares() {
+    function estilizarImpares() {
         let parrafos = document.querySelectorAll('p:nth-child(odd)');
         parrafos.forEach(parrafo => {
-            parrafo.classList.toggle('par');
+            parrafo.classList.toggle('impar');
         });
     }
 
