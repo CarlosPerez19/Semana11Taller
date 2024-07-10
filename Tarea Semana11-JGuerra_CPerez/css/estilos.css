@@ -1,25 +1,75 @@
 
+p {
+    font-size: 16px;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.parrafos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .parrafo-estilo {
-    font-size: 18px;
-    background-color: lightblue;
+    font-size: 15px;
+    color: #01185a;
+    background-color: rgba(177, 215, 228, 0.77);
+    font-family:cursive;
 }
 
 
 .par {
-    background-color: lightgrey;
+    background-color: #acb2f6;
 }
 
 .impar {
-    background-color: lightyellow;
+    background-color: #ffc1a4;
 }
 
-
 .fondo-pagina {
-    background-color: lightcoral;
+    background-color: rgba(240, 128, 128, 0.47);
+    color: black;
 }
 
 input:invalid {
     border: 2px solid red;
+}
+
+input, button {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(77, 52, 113);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #a574ee;
+}
+
+.imagen-visible {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+#imagenesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 img.oculto {

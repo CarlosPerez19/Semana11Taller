@@ -1,44 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Videojuegos</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+<center>
+    <h1>Video Juegos</h1>
 
-    <h1>Interactividad con Java Script</h1>
-
-    <p id="p1">Párrafo 1</p>
-    <p id="p2">Párrafo 2</p>
-    <p id="p3">Párrafo 3</p>
+    <div class="parrafos">
+        <p id="p1">
+            En 1950 después de la Segunda Guerra Mundial y con la construcción de
+            las primeras computadoras programables surgen los videojuegos. Hoy en día existe
+            un gran debate de quien fue la primera persona en crear un videojuego. Sin embargo,
+            muchos consideran a Alexander S. Douglas como su creador.
+        </p>
+        <p id="p2">
+            Alexander S. Douglas creó OXO el primer juego programado de la historia.
+            Que por supuesto estaba hecho para funcionar únicamente en la EDSAC. Por otro lado,
+            se ha debatido por décadas si el OXO puede ser considerado el primer videojuego
+            ya que el mismo no contaba con video animación.
+        </p>
+        <p id="p3">
+            La licencia del dispositivo que desarrolló Baer, conocido como The Brown Box,
+            se le otorgó a Magnavox, quien vendió la primera consola doméstica en 1972, con el
+            nombre de Odyssey. Aunque esta al poco tiempo fracasaría comercialmente,
+            extinguiéndose por errores de mercadeo del producto.</p>
+    </div>
 
     <button onclick="cambiarEstilosParrafos()">Cambiar estilos de párrafos</button>
     <button onclick="estilizarPares()">Aplicar estilo a párrafos pares</button>
     <button onclick="estilizarImpares()">Aplicar estilo a párrafos impares</button>
     <button onclick="cambiarFondo()">Cambiar fondo de página</button>
-    <button onclick="cambiarColoresTitulos()">Cambiar colores de títulos</button>
+    <button onclick="cambiarColoresTitulos()">Cambiar colores de títulos</button><br><br>
 
-    <form action="">
-        <input type="text" id="nombre" placeholder="Nombre">
-        <input type="text" id="apellido" placeholder="Apellido">
-        <input type="number" id="edad" placeholder="Edad">
-        <input type="email" id="correo" placeholder="Correo electrónico">
+    <form id="formulario">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" placeholder="Nombre"><br><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" placeholder="Apellido"><br><br>
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" placeholder="Edad"><br>
+        <label for="correo">Correo:</label><br>
+        <input type="email" id="correo" placeholder="Correo electrónico"><br><br>
         <button type="submit">Enviar</button>
     </form>
 
-    <h1>Resultado</h1>
-    <div id="resultado"></div>
 
-   
-    <h1>Imagenes</h1>
-    <button onclick="mostrarImagenes()">Mostrar imágenes</button>
-    <button onclick="ocultarImagenes()">Ocultar imágenes</button>
+    <h1>-- Resultado --</h1>
+    <div id="resultadoFormulario"></div>
 
-    <div id="divImagenes"></div>
+    <div id="divImagenes">
+        <h1>Imagenes</h1>
+        <button onclick="mostrarImagenes()">Mostrar imágenes</button>
+        <button onclick="ocultarImagenes()">Ocultar imágenes</button>
+    </div>
+    <div id="imagenesContainer"></div>
+</center>
 
-    <script src="JavaScript/funciones.js"></script>
-
+<script src="JavaScript/funciones.js"></script>
 </body>
 </html>
